@@ -1,1 +1,10 @@
-<h1>Show Page</h1>
+<h1>USER PAGE FOR <%= @user.name %></h1>
+
+<ul>
+    <% @user.tweets.each do |tweet| %>
+        <li>    
+            <%= tweet.content %>
+        </li>
+    <% end %>
+</ul>
+

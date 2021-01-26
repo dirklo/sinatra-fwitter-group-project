@@ -1,3 +1,11 @@
 <h1>This is the Main Tweets Index</h1>
 
 <h2>Welcome, <%= @user.username %></h2>
+
+<ul>
+    <% @tweets.each do |tweet|%>
+        <li>
+            <%= tweet.content %>
+        </li>
+    <% end %>
+</ul>

@@ -10,5 +10,5 @@ class User < ActiveRecord::Base
     User.all.find do |user|
       user.slug == slug
     end
-  endU
+  end
 end
